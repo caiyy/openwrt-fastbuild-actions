@@ -17,6 +17,7 @@ cd openwrt
 mkdir -p package/z-last-build-packages || true
 cd package/z-last-build-packages
 git clone https://github.com/jerrykuku/luci-theme-argon.git
+git clone https://github.com/tty228/luci-app-serverchan
 # install_package PACKAGE_DIR GIT_URL
 install_package() {
   if (( $# != 2 )); then

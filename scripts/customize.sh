@@ -10,7 +10,7 @@
 set -eo pipefail
 
 [ -e "${CONFIG_FILE}" ] && cp "${CONFIG_FILE}" openwrt/.config
-
+sudo rm -rf openwrt/package/lean/luci-theme-argon
 # cd openwrt
 # mk openwrt
 cd openwrt

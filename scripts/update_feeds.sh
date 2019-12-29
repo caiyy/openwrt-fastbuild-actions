@@ -17,8 +17,8 @@ cd openwrt
 mkdir -p package/z-last-build-packages || true
 cd package/z-last-build-packages
 
-git clone https://github.com/jerrykuku/luci-theme-argon.git
-git clone https://github.com/tty228/luci-app-serverchan
+#git clone https://github.com/jerrykuku/luci-theme-argon.git
+#git clone https://github.com/tty228/luci-app-serverchan
 
 # install_package PACKAGE_DIR GIT_URL
 install_package() {
@@ -37,3 +37,5 @@ install_package() {
 # Note that to have it compiled, you also have to set its CONFIG_* options
 # Example:
 # install_package mentohust https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git
+install_package mentohust https://github.com/jerrykuku/luci-theme-argon.git
+install_package mentohust https://github.com/tty228/luci-app-serverchan

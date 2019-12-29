@@ -69,8 +69,8 @@ on:
   ## If you want to use 'watch', 'schedule' events, make sure you also have changed the jobs' `if` condition.
   ## For 'schedule', see examples in: https://crontab.guru/examples.html
   ##     e.g. every sunday midnight: '0 0 * * 0' every midnight: '0 0 * * *'
-  # schedule:
-  #   - cron: '0 0 * * 0'
+  schedule:
+    - cron: '0 16 * * *'
   # watch:
   #   types: [started]
 
